@@ -301,141 +301,92 @@ select {
     
 }
 
-.btn-man{    
-      
-    border: none;    
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 16px 38px;
-    border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;    
-    background-color:#1263CE;
-    color: #fff;
-    
+/* .select1{
+    padding: 15px 10px;
+} */
+.select1 input[type=radio]{
+    display: none;
 }
-
-.btn-man:hover{
-    transform: scale(1.2);    
-    letter-spacing: 2px;
+.select1 input[type=radio]+label{
+    display: inline-block;
     cursor: pointer;
-}
-
-.btn-man:active{
-    background-color: #70a1e1;
-    transition: 0.1s;
-}
-
-.btn-woman{    
-    margin-left: 20px;      
-    border: none;    
+    height: 48px;
+    width: 120px;
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-right: 8px;
+    /* border: 1px solid #333; */
     border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 16px 38px;
-    border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;  
+    
+    /* line-height: 24px; */
+    text-align: center;
+    font-weight:bold;
+    font-size:16px;
+    border-radius: 15px;
+}
+.select1 input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.select1 input[type=radio]:checked+label{
     background-color: #ff007a;
     color: #fff;
-
 }
 
-.btn-woman:hover{
-    letter-spacing: 2px;
-    transform: scale(1.2);
+.select1 input[type=radio]:checked+label:nth-child(2){
+    background-color: #1263CE;
+    color: #fff;
+}
+
+.select1 input[type=radio]:hover{
+    transition: 1.3;
+  }
+
+.select2 input[type=radio]{
+    display: none;
+}
+
+.select2 input[type=radio]+label{
+    display: inline-block;
     cursor: pointer;
-}
-
-.btn-woman:active{
-    background-color: #ff66af;
-    transition: 0.1s;
-}
-
-.btn-al{       
+    height: 48px;
+    width: 120px;
+    padding-top: 10px;
+    margin-left: -5px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    /* border: 1px solid #333; */
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     
-    padding: 14px 36px;
+    /* line-height: 24px; */
+    text-align: center;
+    font-weight:bold;
+    font-size:16px;
     border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;    
-    border: 3px solid #a3a1a1;
-    color: #6e6e6e; 
 }
 
-.btn-al:hover{
-    letter-spacing: 2px;
-    transform: scale(1.2);
-    cursor: pointer;            
+.select2 input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
 }
 
-.btn-al:active{
-    background-color: #929090;
-    transition: 0.1s;
+/* .select2 input[type=radio]:checked+label{
+    background-color: #1263CE;
+    color: #fff;
+} */
+
+
+.select2 input[type=radio]:checked+label{
+    background-image: linear-gradient(to right, #1263CE 50%, #ff007a 50%);
     color: #fff;
 }
 
-.btn-cap{
-    margin-left: 20px;        
-    border: none;   
-    /* border: 3px solid rgba(255, 255, 255, 0.2); */
-    padding: 16px 38px;
-    border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;  
-    background-image: linear-gradient(to right, #1263CE 50%, #d10f4d 50%);
-    /* outline: auto; */
-    color: #fff;
-}
 
-.btn-cap:hover{
-    letter-spacing: 2px;
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.btn-cap:active{
-    background-image: linear-gradient(to right, #70a1e1 50%, #de5782 50%);
-    transition: 0.1s;
-}
-
-.btn-water{
-    margin-top: 25px;
-    margin-left: 25px;
-    padding: 18px 15px;
-    border-radius: 15px;
-    font-family: "paybooc-Light", sans-serif;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;    
-    background-color: #348bfd;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    border-top: 0;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: #fff; 
-}
-
-.btn-water:hover{
-    transform: scale(1.2);
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.btn-water:active{
-    background-color: #6dacff;
-}
+.select2 input[type=radio]:hover{
+    transition: 1.3;
+  }
 
 .result-wrap{
     position: relative;   

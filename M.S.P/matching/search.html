@@ -55,13 +55,15 @@
                 <div class="match-title">
                     <h1>나에게 맞는 약 찾기</h1>
                 </div>
-                    <div class="match-content">                    
-                        
+                    <div class="match-content"> 
+                        <form action="">
                             <ul class=match-wrap>
                                 <li class="m-wrap">
                                     <h2>성별을 선택하세요.</h2>
-                                    <button type="button" class="btn-man">남자</button>
-                                    <button type="button" class="btn-woman">여자</button>
+                                    <div class="select1">
+                                        <input type="radio" id="select" name="gender"><label for="select">남자</label>
+                                        <input type="radio" id="select2" name="gender"><label for="select2">여자</label>
+                                    </div>                                    
                                 </li>
                                 <li class="m-wrap">
                                     <h2>연령대를 선택하세요.</h2>
@@ -94,16 +96,18 @@
                                 </li>
                                 <li class="m-wrap">                                    
                                     <h2>약의 제형을 선택하세요.</h2>
-                                    <div class="btn-wrap">
-                                        <button type="button" class="btn-al">알약</button>
-                                        <button type="button" class="btn-cap">캡슐</button>
-                                        <button type="button" class="btn-water">물약</button>                                         
-                                    </div>                                    
+                                    <div class="select2">
+                                        <input type="radio" id="type1" name="drugtype"><label for="type1">알약</label>
+                                        <input type="radio" id="type2" name="drugtype"><label for="type2">캡슐</label>
+                                        <input type="radio" id="type3" name="drugtype"><label for="type3">물약</label>
+                                    </div>                                   
                                 </li>
                             <div class="result-wrap">
                                 <a href="./match_result.html"><button type="submit" class="result" >결과 보기</button></a>
                             </div>                   
-                        </ul>                    
+                        </ul>
+                    </form>                                           
+                        
                 </div>
             </div>
         </div>
